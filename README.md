@@ -4,12 +4,14 @@
 # ENUNCIADO
 El planteamiento y objetivo de ambas partes es el mismo: se plantea una red social organizada a base de "conexiones de amistad" bidireccionales (si x es amigo de y entonces y es amigo de x). Cuando un usuario publica algo, esto es enviado a sus amigos y cada uno puede decidir si reenviarlo a su vez a sus amigos y así sucesivamente.
 Se denomina grumo a un conjunto de usuarios que son mutuamente accesibles en la red. En el siguiente gráfico se muestra una red de 15 usuarios donde existen 4 grumos (los números son los identificadores de los usuarios y cada línea indica una conexión de amistad)
+
 ![image](https://user-images.githubusercontent.com/87580006/199970997-97635912-51ff-4051-8f2b-12fe0247a02f.png)
 
 Los usuarios que no pertenezcan al grumo no recibirán lo enviado pero los que sí pertenezcan lo recibirán casi seguro (porque están relacionado), por ello el objetivo es que la mayoría de los usuarios pertenezcan a un mismo grumo
 
 Si tomamos como ejemplo el gráfico de la página anterior, podemos apreciar que existen cuatro grumos de tamaños 6, 4, 3 y 2 usuarios, en orden descendente. Si, por ejemplo, el objetivo fuera conseguir que en un único grumo estuviesen más del 85% de los usuarios, podemos ver que uniendo los 3 grumos más grandes tendríamos el (6+4+3)/15 = 87% de los usuarios en él. Una forma de conseguirlo sería pagar a los usuarios 32 y 43 para que se hicieran amigos y hacer lo
 mismo con los usuarios 3 y 18:
+
 ![image](https://user-images.githubusercontent.com/87580006/199971322-b1f94683-768e-4269-ac4c-e931d302cd51.png)
 
 Por supuesto existen otras muchas posibilidades, para unir dos grumos basta con se hagan amigos cualquier usuario del primero con cualquier usuario del segundo. Es importante que se pague a la menor cantidad posible de personas, por eso se deben unir los grumos mayores, y es fácil observar
@@ -24,6 +26,7 @@ La información sobre la red se proporciona como un fichero de texto donde la pr
 
 ## SIN OPTIMIZAR (PARTE 1)
 En esta parte el algoritmo es prefijado
+
 ![image](https://user-images.githubusercontent.com/87580006/199971956-4c244de4-a9b9-400a-baf5-9ff81d734df7.png)
 
 ## OPTIMIZADA (PARTE 2)
